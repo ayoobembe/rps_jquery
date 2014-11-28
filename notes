@@ -1,0 +1,41 @@
+1) css transitions
+
+2) event handlers
+	how are they called, what do they return?
+	what exactly are they manipulating? How?
+	event handler callbacks? What's a callback?
+		a) http://recurial.com/programming/understanding-callback-functions-in-javascript/
+		b) http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/
+
+		
+3) When we open the index in the browser, how does
+	 it find the .js code (e.g Game.js, Player.js)
+
+
+4) Trace this:
+
+ 			$(document).ready(function() {
+        var sam = new Player('Sam');
+        var tony = new Player('Tony');
+        var game = new Game(sam,tony);
+        $('.choices img').on('click', function(){
+          sam.picks('paper');
+          tony.picks('rock');
+          $('#results').html(game.winningMessage());
+        }); 
+      })
+
+
+
+5) html data-attributes
+		note: data attributes need to start with 'data-',
+		but anything can follow that.
+
+6) javascript "this"
+			console.log($(this));
+			alert($(this).data('pick'));
+
+7) Method chaining in javascript and jquery:
+	a) http://schier.co/blog/2013/11/14/method-chaining-in-javascript.html
+
+
